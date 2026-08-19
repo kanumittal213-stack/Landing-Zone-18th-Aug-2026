@@ -4,7 +4,7 @@ rgs = {
     location = "East Asia"
   }
   rg1 = {
-    rg_name  = "corp-test"
+    rg_name  = "corp-kanu"
     location = "East Asia"
   }
 }
