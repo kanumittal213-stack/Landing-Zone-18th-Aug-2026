@@ -220,11 +220,11 @@ jobs:
       # Download Plan
       # ------------------------------------------------------
 
-      - name: Download Terraform Plan
-        uses: actions/download-artifact@v4
-        with:
-          name: terraform-plan
-          path: environments/dev
+      # - name: Download Terraform Plan
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: terraform-plan
+      #     path: environments/dev
 
 
       # ------------------------------------------------------
@@ -232,4 +232,4 @@ jobs:
       # ------------------------------------------------------
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve tfplan
+        run: terraform apply -auto-approve
