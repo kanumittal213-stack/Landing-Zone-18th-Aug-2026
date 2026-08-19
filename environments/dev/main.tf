@@ -23,9 +23,9 @@ module "pips" {
 }
 
 module "bastion" {
-  depends_on = [ module.pips ]
-  source = "../../modules/azure bastion"
-  bastion = var.bastion
+  depends_on = [module.pips]
+  source     = "../../modules/azure bastion"
+  bastion    = var.bastion
 }
 
 module "nics" {
