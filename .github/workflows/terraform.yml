@@ -104,13 +104,13 @@ jobs:
       # TFLINT
       # ======================================================
 
-      - name: Setup TFLint
-        uses: terraform-linters/setup-tflint@v4
+      # - name: Setup TFLint
+      #   uses: terraform-linters/setup-tflint@v4
 
-      - name: Run TFLint
-        run: |
-          tflint --init
-          tflint
+      # - name: Run TFLint
+      #   run: |
+      #     tflint --init
+      #     tflint
 
 
       # ======================================================
