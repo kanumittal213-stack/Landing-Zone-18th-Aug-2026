@@ -3,6 +3,10 @@ rgs = {
     rg_name  = "corp-dev"
     location = "East Asia"
   }
+    rg1 = {
+    rg_name  = "corp-nonprod"
+    location = "East Asia"
+  }
 }
 
 vnets = {
