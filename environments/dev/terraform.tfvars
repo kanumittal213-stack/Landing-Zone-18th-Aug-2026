@@ -3,8 +3,8 @@ rgs = {
     rg_name  = "corp-dev"
     location = "East Asia"
   }
-    rg1 = {
-    rg_name  = "corp-nonprod"
+  rg1 = {
+    rg_name  = "corp-test"
     location = "East Asia"
   }
 }
@@ -31,7 +31,7 @@ subnets = {
     rg_name        = "corp-dev"
     address_prefix = ["10.75.2.0/24"]
   }
-    subnet3 = {
+  subnet3 = {
     subnet_name    = "AzureBastionSubnet"
     vnet_name      = "corp-dev-vnet"
     rg_name        = "corp-dev"
@@ -80,12 +80,12 @@ nics = {
 
 bastion = {
   bastion1 = {
-  bastion_name         = "corp-bastion"
-  location             = "East Asia"
-  rg_name              = "corp-dev"
-  config_name          = "bastion_config"
-  subnet_name          = "AzureBastionSubnet"
-  vnet_name            = "corp-dev-vnet"
-  pip_name             = "bastion-pip"
-}
+    bastion_name = "corp-bastion"
+    location     = "East Asia"
+    rg_name      = "corp-dev"
+    config_name  = "bastion_config"
+    subnet_name  = "AzureBastionSubnet"
+    vnet_name    = "corp-dev-vnet"
+    pip_name     = "bastion-pip"
+  }
 }
